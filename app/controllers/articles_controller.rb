@@ -5,7 +5,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     sleep(params[:sleep].to_i) if params[:sleep].present?
-    render {status:ok}.to_json
+    render {status:'ok'}.to_json
   end
 
   # GET /articles/1
