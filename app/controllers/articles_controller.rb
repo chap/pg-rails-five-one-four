@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    sleep(params[:sleep])
+    render {status:ok}.to_json
   end
 
   # GET /articles/1
