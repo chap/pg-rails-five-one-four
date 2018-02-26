@@ -4,8 +4,10 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    sleep(params[:sleep].to_i) if params[:sleep].present?
-    render {status:'ok'}.to_json
+    seconds = params[seconds].to_i rescue 0
+    sleep(seconds)
+    # @articles = Article.all
+    render json: {status: 'ok', seconds: seconds}
   end
 
   # GET /articles/1
