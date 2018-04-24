@@ -24,12 +24,16 @@
     }
   },
   "formation": {
+    "web": {
+     "quantity": 1,
+      "size": "hobby"
+    }
   },
   "addons": [
        {
       "plan": "heroku-postgresql",
       "options": {
-        "version": "10.3"
+        "version": "10"
       }
     }
   ],
