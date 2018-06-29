@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    render text: params
+    @params = params
   end
 
   # GET /articles/1
