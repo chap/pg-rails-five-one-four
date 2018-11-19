@@ -23,4 +23,3 @@ Things you may want to cover:
 
 * deployed 2018-10-16-17:11:13
 
-bump
