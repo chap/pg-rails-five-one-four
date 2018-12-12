@@ -1,7 +1,7 @@
 {
   "name": "pg-rails-five-one-four",
   "scripts": {
-    "postdeploy": "rake db:schema:load"
+    "postdeploy": "env && rake db:schema:load"
   },
   "env": {
     "LANG": {
@@ -30,6 +30,7 @@
       "plan": "heroku-postgresql:hobby-basic"
     }
   ],
+
   "buildpacks": [
     {
       "url": "heroku/ruby"
