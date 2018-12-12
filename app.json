@@ -20,14 +20,14 @@
       "required": true
     },
     "SECRET_KEY_BASE": {
-      "required": true
+      "generator": "secret"
     }
   },
   "formation": {
   },
   "addons": [
        {
-      "plan": "heroku-postgresql"
+      "plan": "heroku-postgresql:hobby-basic"
     }
   ],
   "buildpacks": [
