@@ -34,7 +34,12 @@
     "test": {
       "scripts": {
         "test-setup": "env"
-      }
+      },
+      "addons": [
+       {
+          "plan": "heroku-postgresql:hobby-basic"
+        }
+      ],
     }
   },
   "buildpacks": [
