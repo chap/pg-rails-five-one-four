@@ -30,7 +30,13 @@
       "plan": "heroku-postgresql:hobby-basic"
     }
   ],
-
+    "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "env"
+      }
+    }
+  },
   "buildpacks": [
     {
       "url": "heroku/ruby"
