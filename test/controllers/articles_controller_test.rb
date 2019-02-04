@@ -7,7 +7,7 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get articles_url
-    assert_response :success
+    assert_response :fail
   end
 
   test "should get new" do
