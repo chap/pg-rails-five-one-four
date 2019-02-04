@@ -33,7 +33,7 @@
    "environments": {
     "test": {
       "scripts": {
-        "test": "rails test -c"
+        "test": "rails test -v"
       },
       "addons": [
        {
