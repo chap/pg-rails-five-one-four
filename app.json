@@ -40,10 +40,7 @@
        {
           "plan": "heroku-postgresql:hobby-basic"
         }
-      ],
-      "env": {
-        "HEROKU_UAT": "enabled"
-      }
+      ]
     }
   },
   "buildpacks": [
