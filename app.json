@@ -33,7 +33,10 @@
    "environments": {
     "test": {
       "env": {
-        "HEROKU_UAT": "enabled"
+        "HEROKU_UAT": "enabled",
+        "SECRET_KEY_BASE": {
+          "generator": "secret"
+        }
       },
       "scripts": {
         "test-setup": "env",
