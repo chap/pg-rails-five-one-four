@@ -42,7 +42,8 @@
       },
       "addons": [
        {
-          "plan": "heroku-postgresql:hobby-basic"
+          "plan": "heroku-postgresql:hobby-basic",
+          "as": "systemtest_database"
         }
       ]
     }
