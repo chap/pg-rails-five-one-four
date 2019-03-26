@@ -32,6 +32,9 @@
   ],
    "environments": {
     "test": {
+      "env": {
+        "HEROKU_UAT": "enabled"
+      },
       "scripts": {
         "test-setup": "env",
         "test": "rails test -v"
