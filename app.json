@@ -41,9 +41,8 @@
         "test": "rails test -v"
       },
       "addons": [
-       {
-          "plan": "heroku-postgresql:hobby-basic"
-        }
+        "heroku-postgresql:in-dyno",
+        "heroku-redis:in-dyno"
       ]
     }
   },
