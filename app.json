@@ -34,7 +34,8 @@
     "test": {
       "env": {
         "HEROKU_UAT": "enabled",
-        "SECRET_KEY_BASE": "test-secret"
+        "SECRET_KEY_BASE": "test-secret",
+        "PGSSLMODE": "require"
       },
       "scripts": {
         "test-setup": "env",
