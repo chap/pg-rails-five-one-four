@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @params = params
+    
   end
 
   # GET /articles/1
