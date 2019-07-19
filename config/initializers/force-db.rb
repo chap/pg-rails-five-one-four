@@ -1,1 +1,1 @@
-FIRST_ARTICLE = Article.first.try(:id)
+# FIRST_ARTICLE = Article.first.try(:id)
