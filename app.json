@@ -26,6 +26,8 @@
   // can i have comments?
   "formation": {
   },
+  /* This is a multi-
+   line comment. */
   "addons": [
        {
       "plan": "heroku-postgresql:hobby-basic"
