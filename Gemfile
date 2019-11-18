@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'dalli'
 gem 'sprockets', '~> 3.7.2' # https://blog.heroku.com/rails-asset-pipeline-vulnerability
 
 group :development, :test do
