@@ -38,11 +38,12 @@
       },
       "scripts": {
         "test-setup": "env",
-        "test": "rails test -v"
+        "test": "env && rails test -v"
       },
       "addons": [
        {
-          "plan": "heroku-postgresql:hobby-basic"
+          "plan": "heroku-postgresql:hobby-basic",
+          "plan": "memachier:dev"
         }
       ]
     }
