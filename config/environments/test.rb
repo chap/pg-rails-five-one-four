@@ -7,9 +7,9 @@ Rails.application.configure do
   # and recreated between test runs. Don't rely on the data there!
   config.cache_classes = true
   config.cache_store = :mem_cache_store,
-                    (ENV["MEMCACHIER_SERVERS"] || "").split(","),
-                    {:username => ENV["MEMCACHIER_USERNAME"],
-                     :password => ENV["MEMCACHIER_PASSWORD"],
+                    (ENV["AWS_ELASTICACHE_TRACKING_SERVERS"] || "").split(","),
+                    {:username => ENV["AWS_ELASTICACHE_TRACKING_USERNAME"],
+                     :password => ENV["AWS_ELASTICACHE_TRACKING_PASSWORD"],
                      :failover => true,
                      :socket_timeout => 1.5,
                      :socket_failure_delay => 0.2,
