@@ -41,8 +41,13 @@
         "test": "env && rails test -v"
       },
       "addons": [
-       "heroku-postgresql:hobby-basic",
-       "memcachier:dev"
+        {
+           "plan": "memcachedcloud",
+           "as":   "AWS_ELASTICACHE_TRACKING"
+         },
+         {
+            "plan": "heroku-postgresql"
+          }
       ]
     }
   },
