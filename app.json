@@ -43,7 +43,7 @@
       "addons": [
        {
           "plan": "heroku-postgresql:hobby-basic",
-          "plan": "memachier:dev"
+          "plan": "memcachier:dev"
         }
       ]
     }
