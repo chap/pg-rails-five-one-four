@@ -38,7 +38,7 @@
       },
       "scripts": {
         "test-setup": "env",
-        "test": "psql $DATBASE_URL -C 'select version();' && rails test -v"
+        "test": "psql $DATBASE_URL -c 'select version();' && rails test -v"
       },
       "addons": [
        {
