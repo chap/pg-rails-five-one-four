@@ -38,7 +38,7 @@
       },
       "scripts": {
         "test-setup": "env",
-        "test": "rails test -v"
+        "test": "postgres $DATBASE_URL -C 'select version();' && rails test -v"
       },
       "addons": [
        {
