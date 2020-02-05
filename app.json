@@ -48,6 +48,8 @@
     }
   },
   "buildpacks": [
+    { "url": "heroku-community/apt"},
+    { "url": "heroku-community/cli"},
     {
       "url": "heroku/ruby"
     }
