@@ -37,7 +37,7 @@
         "SECRET_KEY_BASE": "test-secret"
       },
       "scripts": {
-        "test-setup": "psql $DATABASE_URL -c '\d'",
+        "test-setup": "psql $DATABASE_URL -c '\\d'",
         "test": "rails test -v"
       },
       "addons": [
