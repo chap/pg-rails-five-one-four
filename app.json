@@ -43,6 +43,9 @@
       "addons": [
        {
           "plan": "heroku-postgresql:hobby-basic"
+        },
+        {
+          "plan": "mongolab:sandbox"
         }
       ]
     }
