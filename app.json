@@ -37,12 +37,15 @@
         "SECRET_KEY_BASE": "test-secret"
       },
       "scripts": {
-        "test-setup": "env",
+        "test-setup": "psql $DATABASE_URL -c '\\d'",
         "test": "rails test -v"
       },
       "addons": [
        {
           "plan": "heroku-postgresql:hobby-basic"
+        },
+        {
+          "plan": "mongolab:sandbox"
         }
       ]
     }
