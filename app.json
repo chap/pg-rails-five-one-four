@@ -43,7 +43,11 @@
       "addons": [
        {
           "plan": "heroku-postgresql:hobby-basic"
-        }
+        },
+            {
+      "plan": "heroku-redis",
+      "as": "VOLATILE_REDIS"
+    },
       ]
     }
   },
