@@ -30,8 +30,7 @@
           "plan": "heroku-postgresql:hobby-basic"
         },
             {
-      "plan": "heroku-redis",
-      "as": ["VOLATILE_REDIS", "SECOND_REDIS"]
+      "plan": "heroku-redis"
     }
       ],
    "environments": {
