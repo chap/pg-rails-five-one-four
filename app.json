@@ -21,6 +21,9 @@
     },
     "SECRET_KEY_BASE": {
       "generator": "secret"
+    },
+    "SHARE_REDIS": {
+      "value": "true"
     }
   },
   "formation": {
