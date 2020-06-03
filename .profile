@@ -1,4 +1,3 @@
-if [[ -z "${SHARE_REDIS}" ]]; then
-else
+if [[ ! -z "${SHARE_REDIS}" ]]; then
   OTHER_REDIS_URL = "${REDIS_URL}"
 fi
