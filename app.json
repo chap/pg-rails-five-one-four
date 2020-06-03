@@ -31,7 +31,7 @@
         },
             {
       "plan": "heroku-redis",
-      "as": "VOLATILE_REDIS"
+      "as": ["VOLATILE_REDIS", "SECOND_REDIS"]
     }
       ],
    "environments": {
