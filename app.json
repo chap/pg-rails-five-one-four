@@ -44,7 +44,13 @@
        {
           "plan": "heroku-postgresql:hobby-basic"
         }
-      ]
+      ],
+      "formation": {
+          "test": {
+            "quantity": 1,
+            "size": "free"
+          }
+      }
     }
   },
   "buildpacks": [
