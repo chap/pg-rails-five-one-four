@@ -21,15 +21,21 @@
     },
     "SECRET_KEY_BASE": {
       "generator": "secret"
+    },
+    "SHARE_REDIS": {
+      "value": "true"
     }
   },
   "formation": {
   },
-  "addons": [
+      "addons": [
        {
-      "plan": "heroku-postgresql:hobby-basic"
+          "plan": "heroku-postgresql:hobby-basic"
+        },
+            {
+      "plan": "heroku-redis"
     }
-  ],
+      ],
    "environments": {
     "test": {
       "env": {
@@ -43,7 +49,11 @@
       "addons": [
        {
           "plan": "heroku-postgresql:hobby-basic"
-        }
+        },
+            {
+      "plan": "heroku-redis",
+      "as": "VOLATILE_REDIS"
+    }
       ]
     }
   },
