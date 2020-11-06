@@ -7,8 +7,10 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get articles_url
-    assert_response :fail
-#     assert_response :success
+    #assert_response :fail
+    puts "sleeping for 60"
+    sleep(60)
+    assert_response :success
   end
 
   test "should get new" do
