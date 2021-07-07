@@ -4,7 +4,9 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    sleep(60)
+    # @articles = Article.all
+    render json: {status: 'ok', seconds: seconds}
   end
 
   # GET /articles/1
